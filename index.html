@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KickConnect - Football Journey Starts Here</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    .hero-bg {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                  url('https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=1600&q=80') center/cover no-repeat fixed;
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white min-h-screen">
+  <!-- Navbar -->
+  <nav class="bg-black/90 backdrop-blur-md p-4 sticky top-0 z-50 border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-emerald-500 flex items-center gap-2">
+        ⚽️ KickConnect
+      </h1>
+      <div class="space-x-6 md:space-x-10 text-lg">
+        <a href="#agents" class="hover:text-emerald-400 transition">Agents</a>
+        <a href="#training" class="hover:text-emerald-400 transition">Training</a>
+        <a href="#watch" class="hover:text-emerald-400 transition">Watch</a>
+        <a href="#hangout" class="hover:text-emerald-400 transition">Hang Out</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg h-screen flex items-center justify-center text-center px-6">
+    <div class="max-w-4xl">
+      <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+        Your Football Journey Starts Here
+      </h2>
+      <p class="text-xl md:text-2xl mb-10 text-zinc-300">
+        Connect with agents • Find training sessions near you or on your travels • Watch matches • Network with players
+      </p>
+      <button 
+        onclick="document.getElementById('agents').scrollIntoView({behavior: 'smooth'})"
+        class="bg-emerald-600 hover:bg-emerald-500 text-white px-10 py-5 rounded-full text-xl font-bold transition transform hover:scale-105">
+        Start Connecting Now
+      </button>
+    </div>
+  </section>
+
+  <!-- Placeholder for next sections -->
+  <div id="agents" class="h-96 bg-zinc-900 flex items-center justify-center">
+    <p class="text-3xl text-zinc-500">Agents section coming soon...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
